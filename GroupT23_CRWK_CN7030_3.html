@@ -7530,7 +7530,7 @@ Student 3: Hanan Hanif - 2934637</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Comments on group work:</strong> In this coursework we implements a systematic comparison of three class imbalance handling strategies (Baseline, Oversampling, and Class Weighting) across three machine learning algorithms for consumer complaint text classification. We processed 278,884 complaint records using optimized Apache Spark, applied TF-IDF feature engineering, and trained nine models total - Logistic Regression (Jahanzaib), Random Forest (Ammad), and Naive Bayes (Hannan) - each with all three imbalance strategies.
+<p><strong>Comments on group work:</strong> In this coursework we implements a systematic comparison of three class imbalance handling strategies (Baseline, Oversampling, and Class Weighting) across three machine learning algorithms for consumer complaint text classification. We processed 278,884 complaint records using optimized Apache Spark, applied TF-IDF feature engineering, and trained nine models total - Logistic Regression (Jahanzaib), Random Forest (Ammad), and Naive Bayes (Hanan Hanif) - each with all three imbalance strategies.
 Initially, we evaluated models without balancing the dataset and achieved high accuracy metrics, but upon deeper analysis, we realized this high accuracy was misleading as it primarily resulted from the models favoring majority classes while poorly identifying minority classes - which is not a realistic approach for fair complaint classification. Consequently, we applied oversampling and class weighting techniques to address this imbalance. We deliberately excluded undersampling because the smallest minority class contained only 2,706 samples, making undersampling impractical as it would drastically reduce our dataset size and lose valuable information from the majority classes.
 Through comprehensive evaluation including accuracy, F1-score, precision, recall, and ROC-AUC metrics, we demonstrated that while Baseline Logistic Regression achieved the highest overall accuracy (90.92%), the oversampling and weighting strategies significantly improved minority class detection (ROC-AUC improvement from 0.7675 to 0.9076), providing more balanced and realistic performance across all complaint categories.</p>
 </div>
@@ -8428,8 +8428,8 @@ only showing top 5 rows
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hannan - Naive Bayes Models</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== NAIVE BAYES MODELS (HANNAN) ==="</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hanan Hanif - Naive Bayes Models</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== NAIVE BAYES MODELS (Hanan Hanif) ==="</span><span class="p">)</span>
 
 <span class="c1"># 1. Baseline Naive Bayes (No changes)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"1. Training Baseline Naive Bayes..."</span><span class="p">)</span>
@@ -8668,8 +8668,8 @@ Tuning Weighted Random Forest...
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hannan - Naive Bayes Tuning</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== PARAMETER TUNING - NAIVE BAYES (HANNAN) ==="</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hanan Hanif - Naive Bayes Tuning</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== PARAMETER TUNING - NAIVE BAYES (Hanan Hanif) ==="</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">tune_naive_bayes</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">model_name</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Tune Naive Bayes parameters"""</span>
@@ -8933,8 +8933,8 @@ Recall: 0.8519
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hannan - Naive Bayes Evaluation</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== NAIVE BAYES EVALUATION (HANNAN) ==="</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hanan Hanif - Naive Bayes Evaluation</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== NAIVE BAYES EVALUATION (Hanan Hanif) ==="</span><span class="p">)</span>
 
 <span class="n">nb_results</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">nb_results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">evaluate_model</span><span class="p">(</span><span class="n">best_nb_baseline</span><span class="p">,</span> <span class="n">test_df_opt</span><span class="p">,</span> <span class="s2">"Baseline Naive Bayes"</span><span class="p">))</span>
@@ -9507,8 +9507,8 @@ Oversampling    0.8499    0.8657     0.8980  0.8499       0.8923
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hannan - Comprehensive Summary Analysis</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== COMPREHENSIVE SUMMARY ANALYSIS (HANNAN) ==="</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Student 3: Hanan Hanif - Comprehensive Summary Analysis</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== COMPREHENSIVE SUMMARY ANALYSIS (Hanan Hanif) ==="</span><span class="p">)</span>
 
 <span class="c1"># Naive Bayes Performance Summary</span>
 <span class="n">nb_comparison</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
