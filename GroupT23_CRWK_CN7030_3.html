@@ -7519,7 +7519,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Machine-Learning-on-Big-Data-(CN7030)-CRWK-24-25-Term-B-%5B60%25-weighting%5D"><strong>Machine Learning on Big Data (CN7030) CRWK 24-25 Term B [60% weighting]</strong><a class="anchor-link" href="#Machine-Learning-on-Big-Data-(CN7030)-CRWK-24-25-Term-B-%5B60%25-weighting%5D">¶</a></h2><h2 id="Group-ID:-Group_T23"><strong>Group ID: Group_T23</strong><a class="anchor-link" href="#Group-ID:-Group_T23">¶</a></h2><p>Student 1: Muhammad Jahanzaib Ali Khan - 2959951
 Student 2: Ammad Ali - 2850666
-Student 3: Hannan - 2934637</p>
+Student 3: Hanan Hanif - 2934637</p>
 </div>
 </div>
 </div>
@@ -9814,7 +9814,25 @@ Performance Monitoring: Professional deployment would require ongoing monitoring
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Student-3:-Type-the-chosen-issue">Student 3: <strong>Type the chosen issue</strong><a class="anchor-link" href="#Student-3:-Type-the-chosen-issue">¶</a></h1><p>add contribution here ...</p>
+<h2 id="Student-3:-Hanan%C2%A0Hanif---Na%C3%AFve-Bayes"><strong>Student 3: Hanan Hanif - Naïve Bayes</strong><a class="anchor-link" href="#Student-3:-Hanan%C2%A0Hanif---Na%C3%AFve-Bayes">¶</a></h2><p><strong>Chosen Issue: Fairness &amp; Misclassification</strong></p>
+<p><strong>Legal Considerations:</strong>
+* Model Explainability Requirements: Naïve Bayes models, while simpler and more interpretable than deep learning, still present challenges for regulatory compliance requiring explainable decisions in financial services.</p>
+<ul>
+<li>Audit Trail Requirements: The probabilistic nature of Naïve Bayes makes it difficult to provide clear audit trails for individual classification decisions, potentially violating regulatory requirements for decision transparency.</li>
+<li>Processing Time Compliance: Extended training times (16.43 minutes for oversampled data) could impact regulatory deadlines for complaint processing, requiring consideration of service level agreements.</li>
+</ul>
+<p><strong>Social Considerations:</strong></p>
+<ul>
+<li>Naïve Bayes’ independence assumption may oversimplify data, causing misclassification of nuanced complaints → social dissatisfaction.</li>
+</ul>
+<p><strong>Ethical Considerations:</strong></p>
+<ul>
+<li>The model must not unfairly disadvantage certain complaint categories; false negatives could reduce trust in the system.</li>
+</ul>
+<p><strong>Professional Considerations:</strong></p>
+<ul>
+<li>Communicate limitations clearly to stakeholders (e.g., that Naïve Bayes may not capture context well)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -9835,7 +9853,7 @@ Performance Monitoring: Professional deployment would require ongoing monitoring
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># install nbconvert (if facing the conversion error)</span>
@@ -9888,12 +9906,12 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.12/dist-pac
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
@@ -9903,6 +9921,19 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.12/dist-pac
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9911,7 +9942,7 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.12/dist-pac
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s2">"/content/drive/MyDrive/Colab Notebooks/GroupT23_CRWK_CN7030_3.ipynb"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s2">"GroupT23_CRWK_CN7030_3.ipynb"</span>
 </pre></div>
 </div>
 </div>
